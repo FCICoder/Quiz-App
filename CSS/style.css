@@ -17,8 +17,7 @@ body {
   min-height: 100vh;
   
   font-family: 'Alegreya Sans SC', sans-serif;
-  background-color: #05554E;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.45'%3E%3Ccircle fill='%2305554E' cx='50' cy='0' r='50'/%3E%3Cg fill='%230c615f' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23116b6d' cx='50' cy='100' r='50'/%3E%3Cg fill='%2314757a' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23177d86' cx='50' cy='200' r='50'/%3E%3Cg fill='%23198690' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%231c8d9a' cx='50' cy='300' r='50'/%3E%3Cg fill='%231e95a3' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23209cac' cx='50' cy='400' r='50'/%3E%3Cg fill='%2322a2b5' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%2324a9bd' cx='50' cy='500' r='50'/%3E%3Cg fill='%2325afc4' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%2327b5cc' cx='50' cy='600' r='50'/%3E%3Cg fill='%2328bbd3' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%232ac0da' cx='50' cy='700' r='50'/%3E%3Cg fill='%232bc6e0' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%232dcbe7' cx='50' cy='800' r='50'/%3E%3Cg fill='%232ed0ed' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%232fd5f3' cx='50' cy='900' r='50'/%3E%3Cg fill='%2331daf9' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2332DFFF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #e9e9e9;
 background-attachment: fixed;
 background-size: contain;
 }
@@ -71,7 +70,7 @@ background-size: contain;
 /* ======> Question Card */
 .heading {
   --radius: 10px;
-  background-color: rgba(238, 238, 238,.4);
+  /* background-image: linear-gradient(60deg, #bc3b3b, #856cbf); */
   width: fit-content;
   padding: 4px;
   position: relative;
@@ -79,14 +78,19 @@ background-size: contain;
   border-radius: 20px;
   margin-bottom: 50px;
   text-align: center;
+  border: 1px solid rgb(49, 49, 49);
+  border-radius: 15px;
 }
 
 .heading h1 {
   font-size: 70px;
-  padding: 3px;
-  background-image: linear-gradient(60deg, #bc3b3b, #856cbf);
+  padding: .4rem .7rem;
+  /* background-image: linear-gradient(60deg, #bc3b3b, #856cbf); */
   font-family: 'Alegreya Sans SC', sans-serif;
   border-radius: inherit;
+  color: rgb(32, 32, 32);
+  font-size: 2rem;
+
 }
 
 .heading::before {
@@ -98,7 +102,7 @@ background-size: contain;
   top: -5px;
   transform: scale(2) translate(-50%, -50%);
   scale: 1.2  ;
-  background-image: conic-gradient(#fc306a, #3d6bc1);
+  /* background-image: conic-gradient(#fc306a, #3d6bc1); */
   animation: spinning 4s infinite alternate-reverse;
   z-index: -1;
   border-radius: inherit;
@@ -133,10 +137,10 @@ background-size: contain;
 }
 /* ======> Question Card */
 .question {
-  background-color: rgba(1, 2, 1, 0.6);
+  background-color: black;
   position: relative;
   color: #fff;
-  border-radius: 14% !important;
+  border-radius: 5px !important;
 }
 
 .question h2 {

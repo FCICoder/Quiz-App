@@ -55,7 +55,7 @@ class Question {
   display() {
     const questionMarkUp = `
       <div
-        class="question shadow-lg col-lg-6 offset-lg-3  p-4 rounded-3 d-flex flex-column justify-content-center align-items-center gap-3 animate__animated animate__bounceIn"
+        class="question shadow-lg col-lg-12   p-4 d-flex flex-column justify-content-center align-items-center gap-3 animate__animated animate__bounceIn"
       >
         <div class="w-100 d-flex justify-content-between text-light">
           <span class="btn btn-category text-light">${this.category}</span>
